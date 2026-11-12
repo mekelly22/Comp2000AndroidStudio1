@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/txtDash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dashboard"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnBooking"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:text="@string/request_new_booking"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:clickable="true"
+        tools:ignore="ExtraText" />
+
+    <Button
+        android:id="@+id/btnMyBookings"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:text="@string/my_bookings"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:clickable="true"/>
+
+
+
+
+</LinearLayout>
