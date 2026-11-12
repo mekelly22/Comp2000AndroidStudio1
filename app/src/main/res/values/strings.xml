@@ -16,4 +16,10 @@
     <string name="dd_mm_yyyy">DD/MM/YYYY</string>
     <string name="start_time">Start Time</string>
     <string name="end_time">End Time</string>
+    <string name="available_rooms">Available Rooms</string>
+    <string name="available_room">Available Rooms</string>
+    <string name="meeting_room_1">Meeting Room 1</string>
+    <string name="book_now">Book Now</string>
+    <string name="seminar_room_2">Seminar Room 2</string>
+    <string name="book_noww">Book Now</string>
 </resources>
