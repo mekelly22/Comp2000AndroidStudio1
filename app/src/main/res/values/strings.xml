@@ -8,4 +8,12 @@
     <string name="request_new_booking">Request New Booking</string>
     <string name="my_bookings">My Bookings</string>
     <string name="dashboard">Dashboard</string>
+    <string name="select_date">Select date</string>
+    <string name="select_dates">Select Date</string>
+    <string name="select_StartTime" />
+    <string name="select_EndTime" />
+    <string name="SelectDate">Select Date:</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
 </resources>
