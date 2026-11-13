@@ -2,6 +2,7 @@ package com.example.comp2000assesment1;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,6 +36,23 @@ public class RequestBookingActivity extends AppCompatActivity {
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setView(popupView)
                 .create();
+
+        popupView.findViewById(R.id.btnPopupRoom1).setOnClickListener(v -> {
+            dialog.dismiss();
+            startActivity(new Intent(
+                    RequestBookingActivity.this,
+                    RequestingNewBookingActivity.class
+            ));
+        });
+
+        popupView.findViewById(R.id.btnPopupRoom2).setOnClickListener(v -> {
+            dialog.dismiss();
+            startActivity(new Intent(
+                    RequestBookingActivity.this,
+                    RequestingNewBookingActivity.class
+            ));
+        });
+
         dialog.show();
     }
 
