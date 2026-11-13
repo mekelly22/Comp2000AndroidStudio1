@@ -22,4 +22,8 @@
     <string name="book_now">Book Now</string>
     <string name="seminar_room_2">Seminar Room 2</string>
     <string name="book_noww">Book Now</string>
+    <string name="type_name_here">Type name here</string>
+    <string name="request_new_bookingg">Request New Booking</string>
+    <string name="enter_booking_name">Enter booking name</string>
+    <string name="request_booking">Request Booking</string>
 </resources>
