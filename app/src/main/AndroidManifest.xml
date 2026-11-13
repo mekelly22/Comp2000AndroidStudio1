@@ -33,6 +33,15 @@
             android:name=".MyBookingsActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RequestingNewBookingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RequestBookingConfirmation"
+            android:exported="false"
+            android:theme="@style/Theme.Comp2000Assesment1"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

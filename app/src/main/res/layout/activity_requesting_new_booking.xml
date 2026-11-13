@@ -65,12 +65,6 @@
             android:text="End Time: "
             android:textSize="16sp"/>
 
-        <TimePicker
-            android:id="@+id/timePicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:timePickerMode="spinner"/>
-
     </LinearLayout>
 
     <LinearLayout
