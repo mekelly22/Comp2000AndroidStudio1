@@ -1,10 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyBookingsActivity">
+    android:orientation="vertical"
+    android:padding="24dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_bookings"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="12dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerSortBy"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/sortby_options"
+            android:text="Date (newest first)" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:scrollbars="horizontal">
+
+        <TableLayout
+            android:id="@+id/bookingTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="Room"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="Time"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="Status"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="Presentation"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="Meeting Room 1"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="13/11/2026"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="09:00-10:00"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="Confirmed"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="Client meet 1"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="Seminar Room 2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="13/11/2026"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="10:00-11:00"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:text="Pending"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

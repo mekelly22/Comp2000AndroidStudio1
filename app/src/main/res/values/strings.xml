@@ -68,4 +68,11 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string-array name="sortby_options">
+        <item>Date (Oldest First)</item>
+        <item>Date (Newest First)</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+        <item>Pending</item>
+    </string-array>
 </resources>
